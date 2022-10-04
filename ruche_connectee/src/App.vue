@@ -7,6 +7,7 @@ import CapteurGPSComponent from './components/CapteurGPSComponent.vue';
 import MeteoComponent from './components/MeteoComponent.vue';
 import OuvertureComponent from './components/OuvertureComponent.vue'
 import TemperatureComponent from './components/TemperatureComponent.vue'
+import Footer from './components/Footer.vue'
 </script>
 
 <template>
@@ -17,6 +18,7 @@ import TemperatureComponent from './components/TemperatureComponent.vue'
   <CapteurGPSComponent></CapteurGPSComponent>
   <MeteoComponent></MeteoComponent>
   <OuvertureComponent></OuvertureComponent>
+  <Footer></Footer>
   
 
 
