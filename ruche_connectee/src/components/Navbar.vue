@@ -14,6 +14,7 @@
             <a class="navbar-item">
                 Température
             </a>
+            
             <a class="navbar-item">
                 Vérifier les ouvertures
             </a>
@@ -24,6 +25,11 @@
     </div>
     </div>
 </nav>
+<div class="brown">
+    <div class="centerlogo">
+        <img class="logo" src="../assets/pictures/logo_blanc.png" alt="">
+    </div>
+</div>
 
 </template>
 
@@ -37,20 +43,37 @@
 
  }
  .navbar-item{
+    padding:1em;
     font-size: xx-large;
     color: #6E573F;
     font: 900;
-    font-style: italic;
+    text-shadow: 2em;
+    font-family:fantasy;
+    
 
 
  }
 
-  .navbar-item :hover {
+  .navbar-item:hover {
+    background-color: #6E573F !important;
+    color: #F89F2B !important;
+    font-style: italic;
+    text-shadow: 2em;
+    font-family:fantasy;
+    
+ }
+
+ .logo{
+    z-index: 2;
+ }
+ 
+ .brown{
     background-color: #6E573F;
-    
-    color: #F89F2B;
-    
-    text-decoration: underline;
-    
+
+ }
+ .centerlogo{
+    margin-left: auto;
+    margin-right:auto;
+    width: 4%;
  }
 </style>
