@@ -1,23 +1,27 @@
 <template>
   <div id="app">
-    <NavbarComponent></NavbarComponent>
+    <AccueilComponent></AccueilComponent>
   </div>
 </template>
 
 <script>
-import NavbarComponent from '../src/components/NavbarComponent.vue'
+import AccueilComponent from '../src/components/AccueilComponent.vue'
 
 export default {
   name: 'App',
   components: {
-    NavbarComponent
+    AccueilComponent
 }
 }
 </script>
 
 <style>
-body
-{
-  margin:0 !important;
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 60px;
 }
 </style>
