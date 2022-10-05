@@ -41,11 +41,17 @@
       <div>
         <CapteurSonore v-if="componentAffiche=='Capteur Sonore'"></CapteurSonore>
     </div>
+    <div><MeteoComponent v-if="componentAffiche=='Météo'"></MeteoComponent></div>
+    <div><TemperatureComponent v-if="componentAffiche=='Température'"></TemperatureComponent></div>
+    <div><OuvertureComponent v-if="componentAffiche=='Vérifier les ouvertures'"></OuvertureComponent></div>
     </div>
   </template>
   
   <script>
 import CapteurSonore from './CapteurSonore.vue'
+import MeteoComponent from './Meteo.vue'
+import TemperatureComponent from './Temperature.vue'
+import OuvertureComponent from './Ouverture.vue'
 
   export default {
     data() {
@@ -55,6 +61,9 @@ import CapteurSonore from './CapteurSonore.vue'
     },
     components: {
         CapteurSonore,
+        MeteoComponent,
+        TemperatureComponent,
+        OuvertureComponent,
 }
   };
   </script>
