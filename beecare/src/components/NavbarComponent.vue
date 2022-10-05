@@ -8,17 +8,17 @@
   <div class="center-navbar">
     <div id="navbarBasicExample" class="navbar-menu" >
         <div class="navbar-start">
-            <a class="navbar-item">
+            <a class="navbar-item" v-on:click="componentAffiche='Capteur Sonore'">
                 Capteur Sonore
             </a>
-            <a class="navbar-item">
+            <a class="navbar-item" v-on:click="componentAffiche='Température'">
                 Température
             </a>
             
-            <a class="navbar-item">
+            <a class="navbar-item" v-on:click="componentAffiche='Vérifier les ouvertures'">
                 Vérifier les ouvertures
             </a>
-            <a class="navbar-item">
+            <a class="navbar-item" v-on:click="componentAffiche='Météo'">
                 Météo
             </a>
         </div>
@@ -28,11 +28,26 @@
     <div class="centerlogo">
         <img class="logo" src="../assets/pictures/logo_blanc.png" alt="">
     </div>
+    <div>
+        {{componentAffiche}}
+    </div>
 </div>
 </nav>
 
 
 </template>
+
+<script>
+
+export default {
+  data() {
+    return {
+      componentAffiche: ""
+    }
+  }
+}
+</script>
+
 
 <style>
  .navbar{
@@ -41,6 +56,7 @@
  .center-navbar{
     margin-left: auto;
     margin-right: auto;
+    width:70%;
 
  }
  .navbar-item{
@@ -50,6 +66,7 @@
     font: 900;
     text-shadow: 2em;
     font-family:fantasy;
+    cursor:pointer;
     
 
 
